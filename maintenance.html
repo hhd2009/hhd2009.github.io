@@ -28,7 +28,6 @@ body {
     /** optional, better alignment for multi-row use cases -> or use flexbox */
     
     background: #fff;
-    width: 100%;
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, .15), 0 0 4px 0 rgba(0, 0, 0, .2), 0 12px 12px 0 rgba(0, 0, 0, .15);
     margin: 0.5rem 1rem;
     transition: box-shadow .2s ease-in-out;
@@ -76,6 +75,12 @@ body {
     line-height: 1rem;
     font-weight: 200;
 }
+.card-text > a {
+    margin: 0;
+    font-size: 0.8125rem;
+    line-height: 1rem;
+    font-weight: 200;
+}
 .card-placeholder {
     position: fixed;
     display: inline-block;
@@ -104,11 +109,19 @@ body {
     <div class="card-placeholder tpl-placeholder">
     </div>
     <!-- cards to sort -->
-    <div class="card" draggable="true">
+    <div class="card" draggable="true" style="width: 55%">
         <center><img width="40%" src="\./favicon.png" draggable="false" /></center>
         <div class="card-text">
             <h3>维护改造中……</h3>
             <span>请等待一段时间后再次访问。</span>
+        </div>
+    </div>
+    <div class="card-placeholder tpl-placeholder">
+    </div>
+    <div class="card" draggable="true" style="width: 35%">
+        <div class="card-text">
+            <h3>联系站长</h3>>
+            <a href="mailto:1079489986@qq.com" style="text-decoration: none">1079489986@qq.com</a>
         </div>
     </div>
 </div>
